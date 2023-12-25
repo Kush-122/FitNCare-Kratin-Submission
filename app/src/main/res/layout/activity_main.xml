@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/bg2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/remainingStepsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/progressBar"
+        android:paddingBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text=""
+        android:textSize="32sp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular_progress_bar" />
+
+    <TextView
+        android:id="@+id/stepsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Steps"
+        android:textColor="@color/black"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stepsTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/goalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distanceTextView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="60dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textSize="32sp"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/setGoalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/goalTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/gradient_button"
+        android:text="Set Goal"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"/>
+
+</RelativeLayout>
